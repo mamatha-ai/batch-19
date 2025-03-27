@@ -1,0 +1,61 @@
+DME.md  products.url  sales.txt
+
+admin@DESKTOP-NN6MU9C MINGW32 ~/batch-19 (main)
+$ cat>> products.url
+CREATE TABLE
+ reddy-pooja.pooja.Sales_partition (
+invoice_and_item_number:STRING
+date:DATE
+store_number:STRING
+store_name:STRING
+address:STRING
+city:STRING
+zip_code:STRING
+store_location:GEOGRAPHY
+county_number:STRING
+county:STRING
+category:STRING
+category_name:STRING
+vendor_number:STRING
+vendor_name:STRING
+item_number:STRING
+item_description:STRING
+pack:INTEGER
+bottle_volume_ml :INTEGER
+state_bottle_cost:float64
+state_bottle_retail:float64
+bottles_sold:INTEGER
+sale_dollars:float64
+volume_sold_liters:float64
+  cluster by store_number,store_name,city;
+
+
+
+\
+CREATE TABLE
+ mamatha15.Sales_partition (
+invoice_and_item_number:STRING
+date:DATE
+store_number:STRING	
+store_name:STRING	
+address:STRING	
+city:STRING	
+zip_code:STRING	
+store_location:GEOGRAPHY	
+county_number:STRING	
+county:STRING	
+category:STRING	
+category_name:STRING	
+vendor_number:STRING	
+vendor_name:STRING	
+item_number:STRING	
+item_description:STRING	
+pack:INTEGER	
+bottle_volume_ml :INTEGER				
+state_bottle_cost:float64
+state_bottle_retail:float64	
+bottles_sold:INTEGER	
+sale_dollars:float64
+volume_sold_liters:float64	
+volume_sold_gallons:float64)
+PARTITION BY (date)
