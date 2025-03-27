@@ -1,0 +1,1 @@
+create table if not exist mamatha15.sales as select*FROM[D[D[D[D[Dselect * FROM
