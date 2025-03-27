@@ -1,0 +1,1 @@
+insert into 'mamatha15.stack_data_partition' select * from mamatha15.stack_data;
